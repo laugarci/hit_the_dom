@@ -13,3 +13,7 @@ This project was built using the following technologies:
 
 <li>Figma</li>
 <li>Trello</li>
+
+# landing page
+<img src="https://github.com/laugarci/hit_the_dom/blob/main/img/hitthedombo.jpg">
+<img src="https://github.com/laugarci/hit_the_dom/blob/main/img/hitthedombo-mobile.jpg">
