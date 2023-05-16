@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@500&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #020021;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    color: white;
+    font-weight: bold;
+  }
+
+  .logo img {
+    height: 4rem;
+    margin-left: 10rem;
+    margin-top: 3rem;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .header-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 3rem;
+    font-weight: bold;
+
+  }
+
+  a {
+    padding: 0 1rem;
+  }
+
+  a:hover {
+    color: #00F17A;
+    border-right: lightgray solid 1px;
+  }
+
+  
+  main {
+    padding: 2%;
+    color: white;
+  }
+  
+  h1 {
+    font-size: 550%;
+    margin: 0;
+  }
+
+  #image-container {
+    position: relative;
+  }
+
+  .hit-me {
+    background-color: #00F482;
+    color: white;
+    padding: 0.925rem 4.5rem;
+  }
+
+  button {
+    border: none; 
+    font-size: 1.125rem;
+    justify-content: center;
+
+    border-radius: 1.875rem;
+    margin-top: 1rem;
+}
+
+  .sound {
+    position: absolute;
+    display: none;
+  }
+
+  .img {
+    cursor: pointer;
+    filter: drop-shadow(20px 0px 100px #221A3F);
+  }
+
+  footer {
+    text-align: center;
+  }
+  
+  .princing {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 0.725rem 3.5rem;
+    margin-bottom: 5rem;
+  }
+
+  h3 {
+    color: #484262;
+  }
+  h2, h3, .pricing {
+    display: block;
+    font-weight: bold;
+    margin: 10px auto; 
+  }
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+
+  }
