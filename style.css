@@ -130,9 +130,25 @@ body {
   margin-right: 10px;
 }
 
+.hide {
+  display: none !important;
+}
+.mobile-nav {
+  padding-top: 32px !important;
+  top: 0 !important;
+}
+
+.mobile-nav a {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.mobile-nav a:hover {
+  color: #080527;
+}
 
 /* Estilos para dispositivos móviles */
-@media only screen and (max-width: 767px)  {
+@media only screen and (max-width: 900px)  {
 
   .menu-toggle {
     display: block;

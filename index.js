@@ -144,5 +144,6 @@ function toggleMenu() {
   var menu = document.getElementById("menu");
   var menuToggle = document.querySelector(".menu-toggle");
   menu.classList.toggle("show");
+  menu.classList.toggle("mobile-nav");
   menuToggle.classList.toggle("show");
 }
