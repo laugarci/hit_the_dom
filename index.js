@@ -90,6 +90,26 @@ window.addEventListener('load', function() {
   }
 
   //desktop
+  imageContainer.addEventListener('mousemove', function(event) {
+    const mouseX = event.offsetX;
+    const mouseY = event.offsetY;
+
+    let isCursorInsideCircle = false;
+
+    for (let i = 0; i < circles.length; i++) {
+      if (circles[i].isIn(mouseX, mouseY)) {
+        isCursorInsideCircle = true;
+        break;
+      }
+    }
+
+    if (isCursorInsideCircle) {
+      imageContainer.classList.add('hand-cursor');
+    } else {
+      imageContainer.classList.remove('hand-cursor');
+    }
+  });
+
   imageContainer.addEventListener('click', function(event) {
     const clickX = event.offsetX;
     const clickY = event.offsetY;
@@ -119,7 +139,10 @@ window.addEventListener('load', function() {
 });
 
 
+
 function toggleMenu() {
   var menu = document.getElementById("menu");
+  var menuToggle = document.querySelector(".menu-toggle");
   menu.classList.toggle("show");
+  menuToggle.classList.toggle("show");
 }

@@ -78,7 +78,6 @@ body {
     border: none; 
     font-size: 1.125rem;
     justify-content: center;
-
     border-radius: 1.875rem;
     margin-top: 1rem;
 }
@@ -89,11 +88,14 @@ body {
   }
 
   .img {
-    cursor: pointer;
     filter: drop-shadow(20px 0px 100px #221A3F);
   }
 
-  footer {
+  .hand-cursor {
+    cursor: url(img/drumstick.png), auto;
+  }
+
+   footer {
     text-align: center;
   }
   
@@ -130,7 +132,7 @@ body {
 
 
 /* Estilos para dispositivos móviles */
-@media (min-width: 390px) and (max-width: 916px) {
+@media only screen and (max-width: 767px)  {
 
   .menu-toggle {
     display: block;
@@ -152,7 +154,6 @@ body {
     margin-left: 3rem;
   }
 
-  
   .header-links {
     display: none;
   }
