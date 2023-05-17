@@ -1,4 +1,3 @@
-
 class Circle {
   constructor() {
     this.centerx = -1;
@@ -84,12 +83,13 @@ window.addEventListener('load', function() {
   const image = document.getElementById('image');
   const imageWidth = image.clientWidth;
   const imageHeight = image.clientHeight;
-  const circles = getcircles(imageWidth, imageHeight)
+  const circles = getcircles(imageWidth, imageHeight);
 
   for (let i = 0; i < circles.length; i++) {
     circles[i].audio = audios[i];
   }
 
+  //desktop
   imageContainer.addEventListener('click', function(event) {
     const clickX = event.offsetX;
     const clickY = event.offsetY;
@@ -99,8 +99,28 @@ window.addEventListener('load', function() {
       audio.pause();
       audio.currentTime = 0;
       if (circles[i].isIn(clickX, clickY))
-        circles[i].audio.play()
+        circles[i].audio.play();
+    }
+  });
+
+  //movil
+  imageContainer.addEventListener('touchstart', function(event) {
+    const touchX = event.touches[0].clientX;
+    const touchY = event.touches[0].clientY;
+
+    for (let i = 0; i < circles.length; i++) {
+      const audio = circles[i].audio;
+      audio.pause();
+      audio.currentTime = 0;
+      if (circles[i].isIn(touchX, touchY))
+        circles[i].audio.play();
     }
   });
 });
+
+
+
+
+
+
 

@@ -23,7 +23,7 @@ body {
 
   .logo img {
     height: 4rem;
-    margin-left: 10rem;
+    margin-left: 8rem;
     margin-top: 3rem;
   }
 
@@ -55,6 +55,10 @@ body {
     color: white;
   }
   
+  .redonda {
+    display: none;
+  }
+
   h1 {
     font-size: 550%;
     margin: 0;
@@ -109,7 +113,107 @@ body {
     font-weight: bold;
     margin: 10px auto; 
   }
-  
-  @media (min-width: 320px) and (max-width: 480px) {
 
+.text {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+
+/* Estilos para dispositivos móviles */
+@media (min-width: 390px) and (max-width: 916px) {
+
+  .menu-toggle {
+    display: block;
+    background-color: #00F482;
+    color: white;
+    border: none;
+    border-radius: 1.875rem;
+    width: 80px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px 5px 5px 25px; 
   }
+  
+  .logo img {
+    margin-left: 3rem;
+    margin-top: 6rem;
+  }
+
+  
+  .header-links {
+    display: none;
+  }
+
+  .header-links.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #020021;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 400%;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 8rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    background-color: #131313;
+    border: 2px solid #414141;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.text {
+  display: flex;
+  color: #414141;
+  font-size: 24px;
+  font-weight: bold;
+}
+  
+  .main-izq {
+    text-align: center;
+    order: 1;
+  }
+
+  .text-container {
+    margin-top: 2rem;
+  }
+
+  #image-container {
+    margin-top: 2rem;
+  }
+
+  .img {
+    width: 100%;
+    max-width: 350px;
+  }
+}
