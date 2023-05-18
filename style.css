@@ -30,6 +30,8 @@ body {
   main {
     display: flex;
     justify-content: space-around;
+    padding: 2%;
+    color: white;
   }
   
   .header-links a {
@@ -49,12 +51,7 @@ body {
     border-right: lightgray solid 1px;
   }
 
-  
-  main {
-    padding: 2%;
-    color: white;
-  }
-  
+
   .circle {
     display: none;
   }
@@ -214,7 +211,7 @@ body {
   font-weight: bold;
 }
   
-  .main-izq {
+  .main-left {
     text-align: center;
     order: 1;
   }
