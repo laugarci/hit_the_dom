@@ -148,6 +148,6 @@ function toggleMenu() {
 }
 
 function playMusic() {
-  var audio = new Audio('sounds/crash.wav');
+  const audio = new Audio('sounds/crash.wav');
   audio.play();
 }
