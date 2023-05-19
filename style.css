@@ -19,6 +19,7 @@ body {
     padding: 2%;
     color: white;
     font-weight: bold;
+    font-size: 18px;
   }
 
   .logo img {
@@ -174,12 +175,11 @@ body {
     padding: 1rem;
     text-align: center;
     display: block; 
-    position: fixed;
     top: calc(100% + 10px);
     right: 0; 
     background-color: #00F482;
   }
-  
+
   h1 {
     font-size: 400%;
   }
@@ -227,6 +227,7 @@ body {
   .img {
     width: 100%;
     max-width: 350px;
+    position: sticky;
   }
 
   .menu-toggle.show + #menu {
