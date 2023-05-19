@@ -15,5 +15,8 @@ This project was built using the following technologies:
 <li>Trello</li>
 
 # landing page
-<img src="https://github.com/laugarci/hit_the_dom/blob/main/img/hitthedombo.jpg">
-<img src="https://github.com/laugarci/hit_the_dom/blob/main/img/hitthedombo-mobile.jpg">
+<div >
+<img src="https://github.com/laugarci/hit_the_dom/blob/main/img/desktop.png">
+<img src="https://github.com/laugarci/hit_the_dom/blob/main/img/Movile1.png">
+<img src="https://github.com/laugarci/hit_the_dom/blob/main/img/movile2.png">
+<img src="https://github.com/laugarci/hit_the_dom/blob/main/img/movile3.png">
